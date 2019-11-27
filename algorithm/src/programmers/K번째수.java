@@ -19,11 +19,12 @@ public class K번째수 {
         int[] answer = new int[commands.length];
         
         int new_length;
+        int idx;
         
         for(int i=0;i<commands.length;i++) {
         	
         	new_length = commands[i][1]-commands[i][0]+1;
-        	int idx = commands[i][0]-1;
+        	idx = commands[i][0]-1;
         	int[] tmp = new int[new_length];
         	
         	for(int j=0;j<new_length;j++) {
@@ -31,6 +32,7 @@ public class K번째수 {
         		tmp[j] = array[idx];
         		idx++;
         	}
+        	
         	Arrays.sort(tmp);
         	answer[i] = tmp[commands[i][2]-1];
         }
