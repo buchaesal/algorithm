@@ -3,30 +3,28 @@ package programmers;
 import java.util.Arrays;
 
 public class 같은숫자는싫어 {
-	
+
 	public static void main(String[] args) {
-		int []arr = {1,1,3,3,0,1,1};
+		int[] arr = { 1, 1, 3, 3, 0, 1, 1 };
 		solution(arr);
 	}
-	
-	public static int[] solution(int []arr) {
-        
-        int buffer = 10;
-        String str_buffer = "";
-        
-        for(int num : arr) {
-        	if(num != buffer) {
-        		str_buffer += num;
-        	}
-        	
-        	buffer = num;
-        }
-        
-        int[] answer = new int[str_buffer.length()];
-        for(int i=0;i<answer.length;i++) {
-        	answer[i] = str_buffer.charAt(i)-'0';
-        }
-       
-        return answer;
+
+	public static int[] solution(int[] arr) {
+
+		int buffer = 10;
+		int i = 0;
+		int length = 0;
+
+		for (int num : arr) {
+			if (num != buffer) {
+				arr[i++] = num;
+				length++;
+			}
+			buffer = num;
+		}
+
+		int[] arr3 = Arrays.copyOfRange(arr, 0, length);
+
+		return arr3;
 	}
 }
