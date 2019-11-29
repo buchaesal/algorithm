@@ -9,8 +9,8 @@ import java.util.Map;
 public class 실패율 {
 
 	public static void main(String[] args) {
-		int[] stages = { 4,4,4,4,4 };
-		solution(4, stages);
+		int[] stages = { 2, 1, 2, 4, 2, 4, 3, 3};
+		solution(5, stages);
 	}
 
 	/**
@@ -23,22 +23,43 @@ public class 실패율 {
 		Map<Integer, Double> map = new HashMap<Integer, Double>();
 		int bunja;
 		int bunmo;
-		ArrayList list = new ArrayList<>();
-		for (int a : stages) {
-			list.add(a);
-		}
-
-		Collections.sort(list); // 오름차순 정렬
-
+		double rate;
+		
+//		ArrayList list = new ArrayList<>();
+//		
+//		for (int a : stages) {
+//			list.add(a);
+//		}
+//
+//		Collections.sort(list); // 오름차순 정렬
+		
+		/**
+		 * indexOf, lastIndexOf를 쓸경우의 문제점 
+		 * 1. i가 배열에 존재하지 않을 경우 -1을 return하는 문제 
+		 * 이걸 해결 못해서 이중for문을 돌려버려따.
+		 * 
+		 */
+		
 		for (int i = 1; i <= N; i++) {
+			bunja = 0;
+			bunmo = 0;
+			
+//			bunja = list.lastIndexOf(i) - list.lastIndexOf(i - 1);
+//			bunmo = stages.length - list.indexOf(i);
+			
+			for(int n : stages) {
+				if(n>=i) bunmo++;
+				if(n==i) bunja++;
+			}
 
-			bunja = list.lastIndexOf(i) - list.lastIndexOf(i - 1);
-			bunmo = stages.length - list.indexOf(i);
-
-			System.out.println("분자::" + bunja + ",분모::" + bunmo);
-
-			map.put(i, (double) bunja / bunmo);
-
+			System.out.println("분자::" + bunja + ",분모::" + bunmo + ",실패율::"+(double)bunja/bunmo);
+			
+			if(bunmo == 0) {
+				rate = 0;
+			}else {
+				rate = (double) bunja / bunmo;
+			}
+			map.put(i, rate);
 		}
 		
 		List<Integer> keySetList = new ArrayList<>(map.keySet());
@@ -52,7 +73,6 @@ public class 실패율 {
 			answer[size++] = temp;
 		}
 
-		
 		return answer;
 	}
 }
