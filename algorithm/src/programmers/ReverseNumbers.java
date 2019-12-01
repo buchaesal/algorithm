@@ -1,8 +1,6 @@
 package programmers;
 
-import java.util.Arrays;
-
-public class 자연수뒤집어배열로만들기 {
+public class ReverseNumbers {
 	public static void main(String[] args) {
 		solution(1);
 	}

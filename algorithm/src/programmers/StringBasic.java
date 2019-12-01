@@ -1,6 +1,6 @@
 package programmers;
 
-public class 문자열다루기기본 {
+public class StringBasic {
 	
 	public static void main(String[] args) {
 		System.out.println(solution("12341"));

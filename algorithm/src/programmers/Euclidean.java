@@ -1,6 +1,6 @@
 package programmers;
 
-public class ÃÖ´ë°ø¾à¼ö¿ÍÃÖ¼Ò°ø¹è¼ö {
+public class Euclidean {
 	
 	public static void main(String[] args) {
 		solution(2,5);
@@ -10,7 +10,7 @@ public class ÃÖ´ë°ø¾à¼ö¿ÍÃÖ¼Ò°ø¹è¼ö {
 	      int[] answer = new int[2];
 	      int a = n < m ? m : n;
 	      int b = n > m ? m : n;
-	      // ÃÖ¼Ò°ø¹è¼ö =  a * b / ÃÖ´ë°ø¾à¼ö
+	      // ï¿½Ö¼Ò°ï¿½ï¿½ï¿½ï¿½ =  a * b / ï¿½Ö´ï¿½ï¿½ï¿½ï¿½ï¿½
 	      	int mod = 1;
 		  
 		  while(mod>0) {

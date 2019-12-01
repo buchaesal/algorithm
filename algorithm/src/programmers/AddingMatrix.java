@@ -1,6 +1,6 @@
 package programmers;
 
-public class Çà·ÄÀÇµ¡¼À {
+public class AddingMatrix{
 	
 		public static void main(String[] args) {
 			int[][] arr1 = {{1,2},	//00 01

@@ -2,7 +2,7 @@ package programmers;
 
 import java.util.Arrays;
 
-public class K¹øÂ°¼ö {
+public class NumberOfKth {
 	
 	public static void main(String[] args) {
 		int[] array = {1, 5, 2, 6, 3, 7, 4};

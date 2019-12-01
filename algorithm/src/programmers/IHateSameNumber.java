@@ -2,7 +2,7 @@ package programmers;
 
 import java.util.Arrays;
 
-public class 같은숫자는싫어 {
+public class IHateSameNumber {
 
 	public static void main(String[] args) {
 		int[] arr = { 1, 1, 3, 3, 0, 1, 1 };

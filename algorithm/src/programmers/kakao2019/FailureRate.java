@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class ½ÇÆÐÀ² {
+public class FailureRate{
 
 	public static void main(String[] args) {
 		int[] stages = { 2, 1, 2, 4, 2, 4, 3, 3};
@@ -14,9 +14,9 @@ public class ½ÇÆÐÀ² {
 	}
 
 	/**
-	 * N ½ºÅ×ÀÌÁö¿¡ ½ÃµµÇÑ »ç¶÷ ¼ö : N°ú °°°Å³ª Å©´Ù. 
-	 * N ½ºÅ×ÀÌÁö¿¡ ½ÃµµÇßÁö¸¸ '½ÇÆÐ'ÇÑ »ç¶÷ ¼ö : N°ú °°´Ù.(N¿¡ ¸Ó¹°·¯ ÀÖ´Â »ç¶÷)
-	 * ½ÇÆÐÀ² = '½ÇÆÐ'ÇÑ »ç¶÷ ¼ö / ½ÃµµÇÑ »ç¶÷ ¼ö
+	 * N ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ãµï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ : Nï¿½ï¿½ ï¿½ï¿½ï¿½Å³ï¿½ Å©ï¿½ï¿½. 
+	 * N ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ãµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 'ï¿½ï¿½ï¿½ï¿½'ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ : Nï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½.(Nï¿½ï¿½ ï¿½Ó¹ï¿½ï¿½ï¿½ ï¿½Ö´ï¿½ ï¿½ï¿½ï¿½)
+	 * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ = 'ï¿½ï¿½ï¿½ï¿½'ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ / ï¿½Ãµï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½
 	 */
 	public static int[] solution(int N, int[] stages) {
 		int[] answer = new int[N];
@@ -31,12 +31,12 @@ public class ½ÇÆÐÀ² {
 //			list.add(a);
 //		}
 //
-//		Collections.sort(list); // ¿À¸§Â÷¼ø Á¤·Ä
+//		Collections.sort(list); // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 		
 		/**
-		 * indexOf, lastIndexOf¸¦ ¾µ°æ¿ìÀÇ ¹®Á¦Á¡ 
-		 * 1. i°¡ ¹è¿­¿¡ Á¸ÀçÇÏÁö ¾ÊÀ» °æ¿ì -1À» returnÇÏ´Â ¹®Á¦ 
-		 * ÀÌ°É ÇØ°á ¸øÇØ¼­ ÀÌÁßfor¹®À» µ¹·Á¹ö·Áµû.
+		 * indexOf, lastIndexOfï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 
+		 * 1. iï¿½ï¿½ ï¿½è¿­ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ -1ï¿½ï¿½ returnï¿½Ï´ï¿½ ï¿½ï¿½ï¿½ï¿½ 
+		 * ï¿½Ì°ï¿½ ï¿½Ø°ï¿½ ï¿½ï¿½ï¿½Ø¼ï¿½ ï¿½ï¿½ï¿½ï¿½forï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.
 		 * 
 		 */
 		
@@ -52,7 +52,7 @@ public class ½ÇÆÐÀ² {
 				if(n==i) bunja++;
 			}
 
-			System.out.println("ºÐÀÚ::" + bunja + ",ºÐ¸ð::" + bunmo + ",½ÇÆÐÀ²::"+(double)bunja/bunmo);
+			System.out.println("ï¿½ï¿½ï¿½ï¿½::" + bunja + ",ï¿½Ð¸ï¿½::" + bunmo + ",ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½::"+(double)bunja/bunmo);
 			
 			if(bunmo == 0) {
 				rate = 0;
@@ -63,7 +63,7 @@ public class ½ÇÆÐÀ² {
 		}
 		
 		List<Integer> keySetList = new ArrayList<>(map.keySet());
-		// ³»¸²Â÷¼ø //
+		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ //
 		Collections.sort(keySetList, (o1, o2) -> (map.get(o2).compareTo(map.get(o1))));
 		
 		System.out.println(keySetList);
