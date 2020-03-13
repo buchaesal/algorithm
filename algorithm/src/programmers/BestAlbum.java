@@ -50,14 +50,22 @@ public class BestAlbum {
 	        	 }
 	        }
 	        
-	        List<String> keySetList = new ArrayList<String>(map.keySet());//value기준 내림차순으로 정렬
+	        List<Integer> forSort = new ArrayList<Integer>();
+	        Iterator<String> sortIter = map.keySet().iterator();
+		       while(sortIter.hasNext()) {
+		    	   forSort.add(map.get(sortIter.next()));
+		       }
+		       
+		       Collections.sort(forSort, Collections.reverseOrder());
 	        
-	        Collections.sort(keySetList, (o1,o2) -> (map.get(o2).compareTo(map.get(o1)))); 
+//	        List<String> keySetList = new ArrayList<String>(map.keySet());//value기준 내림차순으로 정렬
+//	        
+//	        Collections.sort(keySetList, (o1,o2) -> (map.get(o2).compareTo(map.get(o1)))); 
 	        
 	        
 	        int cnt=0;
 	        
-	        
+	        List<String> Musics = new ArrayList<String>();
 	        Iterator<String> iter = map.keySet().iterator();
 	        List<Integer> answerArr = new ArrayList<Integer>();
 	        
