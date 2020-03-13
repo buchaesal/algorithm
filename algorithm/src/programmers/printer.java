@@ -1,53 +1,62 @@
 package programmers;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
-import java.util.Queue;
+import java.util.PriorityQueue;
 
 public class printer {
-	/**
-	 * 
-	 * 
-	 */
-
 	public static void main(String[] args) {
-		solution(new int[] {2, 1, 3, 2}, 1); //return : 1
+		solution(new int[] {2, 1, 3, 2}, 2); //return : 1
 	}
 	 public static int solution(int[] priorities, int location) {
-	        int answer = 0;
-	        
-	        LinkedList<Integer> que = new LinkedList<Integer>();//{2, 1, 3, 2}
-	        ArrayList<Integer> indexBox = new ArrayList<Integer>();
-	        
-	        for(int idx : priorities) { // 입력받은 대기순서들을 큐에 담는다.
-	        	que.add(idx);
-	        	indexBox.add(idx);
-	        }
-	        
-	        int cnt = 0;
-	        int first = 0;
-	        
-	        while(true) {
-	        	first = que.peek(); //대기순서의 맨 앞
-	        	
-	        	 for(int num : que) {
-	 	        	if(first<num) {
-	 	        		que.add(first); //큐의 맨 뒤로 보냄
-	 	        		cnt++;
-	 	        		break;
-	 	        	}
-	 	        	
-	 	        	if(cnt == que.size()) {
-	 	        		que.remove(); //큐의 맨 앞을 출력함(제거)
-	 	        		break;
-	 	        	}
-	 	        }
-	        	 
-	        	 cnt = 0;
-	        }
-	       
-	        
-	        
-	        //return answer;
+		 
+		 class Doc implements Comparable<Doc> {
+			 int id;
+			 int priority;
+			 
+			 public Doc(int id, int priority) {
+				 this.id = id;
+				 this.priority = priority;
+			}
+			 
+			@Override
+			public int compareTo(Doc doc) {
+				return this.priority<=doc.priority?1:-1;
+			}
+			
+			
+		 }
+		 
+		 PriorityQueue<Doc> preQue = new PriorityQueue<Doc>();
+		 LinkedList<Doc> que = new LinkedList<Doc>();
+		 
+		 for(int i=0;i<priorities.length;i++) {
+			 Doc doc = new Doc(i, priorities[i]);
+			 preQue.offer(doc);
+			 que.offer(doc);
+		 }
+		 
+		 Doc target;
+		 Doc tempDoc;
+		 int order = 0;
+		 
+		 target = preQue.poll(); // 우선순위가 가장 높은 문서가 담긴다.
+		 
+		 while(!que.isEmpty()) {
+			 
+			 tempDoc = que.poll();
+			 
+			 if(tempDoc.id != target.id && tempDoc.priority != target.priority) {
+				 que.offer(tempDoc);
+			 }else{
+				 order++;
+				 if(tempDoc.id == location) {
+					 break;
+				 }
+				 target = preQue.poll(); // 우선순위가 가장 높은 문서가 담긴다.
+			 }
+		 }
+		 
+		 return order;
+		 
 	    }
 }
