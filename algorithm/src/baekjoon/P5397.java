@@ -1,7 +1,7 @@
 package baekjoon;
 
 import java.io.IOException;
-import java.util.LinkedList;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
@@ -22,7 +22,7 @@ public class P5397 {
 		for(int n=0 ; n<tc ; n++) {
 
 			String input = sc.next(); // <<BP<A>>Cd-
-			List<Character> pwd = new LinkedList<Character>();
+			List<Character> pwd = new ArrayList<Character>();
 
 			// 고려해야 할 특문 : <>-
 			int cursorIdx = 0;
@@ -32,13 +32,16 @@ public class P5397 {
 				target = input.charAt(i);
 				if (target == '<') {
 					if(cursorIdx != 0) cursorIdx -= 1;
+					continue;
 				}else if (target == '>' ) {
 					if(cursorIdx < pwd.size()) cursorIdx += 1;
+					continue;
 				}else if (target == '-') {
 					if(cursorIdx>0) {
 						pwd.remove(cursorIdx - 1);
 						cursorIdx-=1;
 					}
+					continue;
 				} else { // 일반 문자일 때
 					if (cursorIdx < pwd.size()) {
 						pwd.add(cursorIdx, target);
@@ -46,12 +49,13 @@ public class P5397 {
 						pwd.add(target);
 					}
 					cursorIdx++;
+					continue;
 				}
 			}
 			
 			String str = "";
-			for(Character c : pwd) {
-				str += c+"";
+			for(int i=0;i<pwd.size();i++) {
+				str += pwd.get(i);
 			}
 			System.out.println(str);
 		}
