@@ -3,6 +3,12 @@ package programmers.kakao;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * https://programmers.co.kr/learn/courses/30/lessons/64061
+ * 크레인 인형뽑기 게임
+ * @author danbi
+ *
+ */
 public class Crane2019 {
 
 	public static void main(String[] args) {
