@@ -1,5 +1,9 @@
 package programmers.summerwinter;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Iterator;
+
 /**
  * https://programmers.co.kr/learn/courses/30/lessons/49993 Summer/Winter
  * Coding(~2018) 스킬트리
@@ -10,7 +14,7 @@ package programmers.summerwinter;
 public class skillTree {
 
 	public static void main(String[] args) {
-		System.out.println(solution("CBD", new String[] { "BACDE", "CBADF", "AECB", "BDA" }));
+		System.out.println(solution2("CBD", new String[] { "BACDE", "CBADF", "AECB", "BDA" }));
 
 	}
 
@@ -36,7 +40,6 @@ public class skillTree {
 						}
 					} else { // 선행 스킬이 필요 없다면
 						mySkill += c;
-						System.out.println("mySkill중간:" + mySkill);
 					}
 				}
 			}
@@ -46,5 +49,20 @@ public class skillTree {
 		}
 		return answer;
 	}
+	
+	 public static int solution2(String skill, String[] skill_trees) {
+	        int answer = 0;
+	        ArrayList<String> skillTrees = new ArrayList<String>(Arrays.asList(skill_trees));
+	        //ArrayList<String> skillTrees = new ArrayList<String>();
+	        Iterator<String> it = skillTrees.iterator();
+
+	        while (it.hasNext()) {
+	            if (skill.indexOf(it.next().replaceAll("[^" + skill + "]", "")) != 0) {
+	                it.remove();
+	            }
+	        }
+	        answer = skillTrees.size();
+	        return answer;
+	    }
 
 }
