@@ -11,7 +11,6 @@ import java.io.*;
 public class P9095 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
         int[] arr = new int[11]; // n의 최대값은 11이다. n의 경우의 수가 들어있는 배열
 
@@ -27,9 +26,10 @@ public class P9095 {
         for(int i=0;i<count;i++){
             int n = Integer.parseInt(br.readLine());
             for(int j=4;j<=n;j++){
+                if(arr[j]!=0) continue;
                 arr[j] = arr[j-1] + arr[j-2] + arr[j-3];
             }
-            b
+            System.out.println(arr[n]);
         }
 
     }
