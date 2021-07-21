@@ -1,50 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="00110756-f4ac-4e1e-8600-0b7dce2e8b12" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/P10798.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/P11052.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/P1120.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/P1158.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/P1551.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/P5397.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/P9095.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baekjoon/P9461.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/programmers/kakao/CompressString.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/programmers/kakao/Crane2019.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/programmers/kakao/FailureRate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/programmers/kakao/SecretMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/programmers/level1/AddingMatrix.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/programmers/level1/BestAlbum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/programmers/level1/CaesarCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/programmers/level1/DividedArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/programmers/level1/Euclidean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/programmers/level1/FindPrimeNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/programmers/level1/FindPrimeNumber2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/programmers/level1/GymSuit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/programmers/level1/IHateSameNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/programmers/level1/NumberOfKth.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/programmers/level1/PYinString.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/programmers/level1/RescueBoat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/programmers/level1/ReverseNumbers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/programmers/level1/SortingString.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/programmers/level1/SquareRoot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/programmers/level1/StringBasic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/programmers/level1/makeStrangeWords.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/programmers/level1/printer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/programmers/level2/BridgeAndTruck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/programmers/level2/DevFunction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/programmers/summerwinter/budget.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/programmers/summerwinter/skillTree.java" afterDir="false" />
-    </list>
+    <list default="true" id="00110756-f4ac-4e1e-8600-0b7dce2e8b12" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -178,7 +135,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1626779343633</updated>
-      <workItem from="1626779349936" duration="339000" />
+      <workItem from="1626779349936" duration="952000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1626779649841</created>
@@ -187,15 +144,21 @@
       <option name="project" value="LOCAL" />
       <updated>1626779649841</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="init">
+      <created>1626779709359</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1626779709359</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="339000" />
+    <option name="totallyTimeSpent" value="952000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
       <window_info id="Designer" />
