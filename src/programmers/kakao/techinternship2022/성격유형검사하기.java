@@ -10,10 +10,10 @@ public class 성격유형검사하기 {
 
     public static void main(String[] args) {
 
-//        Character a = 'A';
-//        Character b = 'B';
-//        String str = "";
-//        System.out.println(str+a);
+        Character a = 'A';
+        Character b = 'B';
+        String str = "";
+        System.out.println(str+a);
 
         String result = solution(new String[]{"AN", "CF", "MJ", "RT", "NA"}, new int[]{5, 3, 2, 7, 5});
 
