@@ -20,18 +20,16 @@ public class 성격유형검사하기 {
 
         String answer = "";
 
-//        Map<Character, Integer> scoreMap = new HashMap<>();
-
         for(int i=0; i<survey.length; i++){
 
             int choice = choices[i];
             if(choice == 4) continue;
 
             if(choice<4){ // 앞 유형 득점
-                Character frontStr = survey[i].substring(0,1).charAt(0);
+                char frontStr = survey[i].charAt(0);
                 scoreMap.put(frontStr, scoreMap.getOrDefault(frontStr, 0) + (4-choice));
             }else if(choice>4){ // 뒷 유형 득점
-                Character backStr = survey[i].substring(1,2).charAt(0);
+                char backStr = survey[i].charAt(1);
                 scoreMap.put(backStr, scoreMap.getOrDefault(backStr, 0) + (choice-4));
             }
 
