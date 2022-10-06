@@ -48,7 +48,7 @@ public class 성격유형검사하기 {
         int count1 = Optional.ofNullable(scoreMap.get(type1)).orElse(0);
         int count2 = Optional.ofNullable(scoreMap.get(type2)).orElse(0);
 
-        return count1 == count2 ? (type1 > type2 ? type2 : type1) : count1 > count2 ? type1 : type2;
+        return count1 >= count2 ? type1 : type2;
 
     }
 
