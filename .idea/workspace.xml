@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00110756-f4ac-4e1e-8600-0b7dce2e8b12" name="Default Changelist" comment="연습문제 숫자짝꿍">
-      <change afterPath="$PROJECT_DIR$/src/programmers/level1/없는숫자더하기.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="00110756-f4ac-4e1e-8600-0b7dce2e8b12" name="Default Changelist" comment="없는 숫자 더하기 : 문제를 잘 읽자">
+      <change afterPath="$PROJECT_DIR$/src/programmers/level1/나머지가1이되는수찾기.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -229,7 +228,7 @@
       <workItem from="1665034676462" duration="3630000" />
       <workItem from="1665100680310" duration="9416000" />
       <workItem from="1665446371919" duration="19021000" />
-      <workItem from="1665532993837" duration="10934000" />
+      <workItem from="1665532993837" duration="11435000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1626779649841</created>
@@ -329,7 +328,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665546991903</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="없는 숫자 더하기 : 문제를 잘 읽자">
+      <created>1665550772967</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1665550772967</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -406,7 +412,8 @@
     <MESSAGE value="최소 직사각형 &amp; 숫자 문자열과 영단어" />
     <MESSAGE value="탐욕법(Greedy) 체육복" />
     <MESSAGE value="연습문제 숫자짝꿍" />
-    <option name="LAST_COMMIT_MESSAGE" value="연습문제 숫자짝꿍" />
+    <MESSAGE value="없는 숫자 더하기 : 문제를 잘 읽자" />
+    <option name="LAST_COMMIT_MESSAGE" value="없는 숫자 더하기 : 문제를 잘 읽자" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
