@@ -1,23 +1,44 @@
 package codility;
 
-import test.test;
+import java.util.Arrays;
+import java.util.Comparator;
 
 public class LongestPassword {
     public static void main(String[] args) {
-        int result = new test().solution("test 5 a0A pass007 ?xy1");
+        boolean result = new LongestPassword().solution(new int[]{1,1,2,3,5}, 5);
         System.out.println(result);
     }
 
-    public int solution(String S) {
-        int answer = -1;
-
-        for(String word : S.split(" ")){
-            if(isValid(word)){
-                answer = Math.max(answer, word.length());
-            }
+    public boolean solution(int[] A, int K){
+        int n = A.length;
+        for (int i = 0; i < n - 1; i++) {
+            if (A[i] + 1 < A[i + 1])
+                break;
         }
+        if (A[0] != 1 && A[n - 1] != K)
+            return false;
+        else
+            return true;
+    }
 
-        return answer;
+//    public int solution(int N) {
+//
+//        int goal = getSumOfDigit(N), start = N+1;
+//
+//        while(goal != getSumOfDigit(start)){
+//            start++;
+//        }
+//
+//        return start;
+//    }
+
+    private int getSumOfDigit(int number){
+        int sum = 0;
+        while(number>0){
+            sum += number%10;
+            number /= 10;
+        }
+        return sum;
     }
 
     private boolean isValid(String word){
